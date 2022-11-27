@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player UI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/Responchive.css"> -->
+    <link rel="stylesheet" href="css/ano-utili.css">
+</head>
+
+<body>
+    <!-- 
+        col-white
+        bg-red
+        dis-flex
+        align-it-cen
+        jus-con-cen
+        jus-con-spa-bt
+        flex-dir-culom
+        flex-dir-row
+        flex-dir-row-rev
+        font-13px
+        font-18px
+        font-24px
+        font-weight-900
+        padd-10-left
+        margin-100px-left
+        margin-10px-top
+        po-rel
+        po-ab
+        po-fix
+        bottom-0
+        top-0
+        right-0
+        col-gray
+        padd-45-bott
+        padd-20-right
+        cur-poi
+        height-200
+        border-r-12px
+        border-r-4px
+        grid-g-50
+        z-index-12
+        over-hidd
+     -->
+    <!-- -->
+    <section class="player bg-gray-light dis-flex align-it-cen  height-100vh">
+        <div class="dis-flex flex-dir-culom jus-con-cen bg-white margin-auto border-r-15px main-waf box-shadow-18px ">
+            <div class="over-hidd  dis-flex width-100-per align-it-cen flex-dir-culom">
+                <div class="dis-flex align-it-cen flex-dir-culom margin-30px-top">
+                    <div class="">
+                        <p class="song-Name font-24px font-weight-900 text-tran-uppr"</p>
+                    </div>
+                    <div class="margin-10px-top padd-30-bott">
+                        <p class="Artiest-name"></p>
+                    </div>
+                </div>
+                <div class="dis-flex  ">
+                    <img class="song-Img height-200px border-r-100px">
+                </div>
+                <div
+                    class="margin-10px-top padd-30-bott align-it-cen dis-flex jus-con-cen flex-dir-culom width-100-per">
+                    <div class="margin-10px-top dis-flex jus-con-spa-bt width-80-per">
+                        <p class="current-duration"></p>
+                        <p class="main-duration"></p>
+                    </div>
+                    <div class="progress-baar cur-poi border-r-10px bg-black  width-80-per over-hidd ">
+                        <div class="progress-baar-width bg-red  bg-red">
+                        </div>
+                    </div>
+                </div>
+                <audio class="Music-src" src=""></audio>
+                <div class="dis-flex align-it-cen padd-10-bott">
+                    <div class="">
+                        <i class="o-icon-P playlist-btn cur-poi font-weight-900 font-20px"></i></div>
+                    <div class="music-perveus">
+                        <i class="o-icon-back-ward cur-poi margin-left-right-25px"></i></div>
+                    <div class="play-pouse-btn">
+                        <i class=" play-butt padd-12px border-r-20px col-white bg-black cur-poi o-icon-o"></i></div>
+                    <div class="music-next">
+                        <i class="o-icon-for-ward cur-poi margin-left-right-25px"></i></div>
+                    <div class="">
+                        <i class="o-icon-u cur-poi font-weight-900 font-20px"></i></div>
+                </div>
+                <div class="po-rel play-list-hide play-list-toogle  width-100-per">
+                    <div class="po-ab bg-gray-light width-100-per over-scrool-y height-300px">
+                        <div class="dis-flex flex-dir-culom margin-left-5-right-10px">
+                            <div class="dis-flex flex-dir-row jus-con-spa-bt">
+                                <div class="">Playlist</div>
+                                <div class="cur-poi close-playlist"><i class="  o-icon-w font-12px font-weight-900"></i></div>
+                            </div>
+                            <div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div>
+                            <div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div><div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div><div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div><div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div><div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div><div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div><div class="dis-flex align-it-cen flex-dir-row jus-con-spa-bt margin-10px-top border-bottom">
+                                <div class="">
+                                    <div class="dis-flex  ">
+                                        <img class="p-s-img height-40px border-r-5px" src="Image/benner/landscape-jarico.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <p class="p-s-Name text-tran-uppr">Landscape</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-s-a-name font-13px">Jarico</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="p-s-duration font-15px">0:00</p>
+                                </div>
+                                <div class="heart-btnn"><i class="cur-poi  o-icon-f font-25px heart-btnn"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="java-script/Index.js"></script>
+
+</html>
